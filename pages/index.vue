@@ -1,6 +1,6 @@
 <script setup lang="ts">
 definePageMeta({});
-import { List } from '../components/List.vue';
+import List from '../components/List.vue';
 </script>
 <template>
   <div>Nuxt 3 Playground</div>
