@@ -1,6 +1,9 @@
 <template>
   <ul class="list">
     <slot></slot>
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
   </ul>
 </template>
 
@@ -11,12 +14,8 @@ const count = ref(0);
 </script>
 
 <style lang="scss" scoped>
-.list {
-  margin: 0;
+.list > li + li {
+  margin-top: 16px;
   padding: 0;
-
-  > li + li {
-    margin-top: 16px;
-  }
 }
 </style>
